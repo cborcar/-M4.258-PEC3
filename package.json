@@ -1,8 +1,8 @@
 {
-  "name": "uoc-boilerplate",
-  "version": "3.4.0",
+  "name": "pec3",
+  "version": "1.0.0",
   "private": true,
-  "description": "Boilerplate for Advanced HTML/CSS Tools UOC students",
+  "description": "PEC3 de la asignatura “Herramientas HTML y CSS II” del máster de Desarrollo de Sitios y Aplicaciones Web de la UOC",
   "scripts": {
     "parcel:serve": "parcel src/index.html -p 8123 --target web --open",
     "parcel:build": "parcel build src/index.html --target web --no-source-maps --no-cache",
@@ -23,17 +23,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uoc-advanced-html-css/uoc-boilerplate.git"
+    "url": "git+https://github.com/cborcar/M4.258-PEC3.git"
   },
   "author": {
-    "name": "Jordi Tarrida",
-    "email": "jorditarrida@uoc.edu"
+    "name": "Cayetano Borja Carrillo",
+    "email": "cborcar@uoc.edu"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/uoc-advanced-html-css/uoc-boilerplate/issues"
+    "url": "https://github.com/cborcar/M4.258-PEC3/issues"
   },
-  "homepage": "https://github.com/uoc-advanced-html-css/uoc-boilerplate#readme",
+  "homepage": "https://github.com/cborcar/M4.258-PEC3#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.2.0",
     "autoprefixer": "^10.4.2",
@@ -42,7 +42,10 @@
     "postcss-preset-env": "^7.3.1",
     "posthtml-include": "^1.7.2",
     "rimraf": "^3.0.2",
-    "sharp": "^0.29.3"
+    "sharp": "^0.29.3",
+    "tailwindcss": "^3.0.24"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.1.1"
+  }
 }

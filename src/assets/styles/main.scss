@@ -1,3 +1,10 @@
+@tailwind base;
+@tailwind components;
+
+@import "npm:@fortawesome/fontawesome-free/css/all.css";
+@import "https://rsms.me/inter/inter.css";
+
+
 /**
  * Use this file to import partials.
  * Do not include SCSS code in this file.
@@ -28,3 +35,11 @@
 /**
  * Do NOT include anything else in this file!
  */
+ @tailwind utilities;
+ 
+.form-control {
+    @apply w-full shadow appearance-none border rounded py-1.5 px-3;
+}
+.btn-success {
+    @apply bg-green-700 hover:bg-green-900 text-white py-2 px-3.5 rounded;
+}
