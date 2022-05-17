@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
     
-    
     <title>Rock & You</title>
   </head>
 
@@ -40,53 +39,52 @@
       <h1 class="text-center text-3xl pt-8 pb-4">Bandas</h1>
       <div class="flex flex-wrap">
         <!-- Elemento -->
-        <div class="w-full sm:w-1/2 md:w-1/3 box-border py-2.5 px-3.5">
-          <img class="w-full mb-4" src="assets/images/band1.png" alt="Guns N' Flowers">
-          <h3 class="text-center text-h3">Guns N' Flowers</h3>
-          <h4 class="text-center text-h4">Hard Rock</h4>
-          <p class="text-justify p-4">La famosa banda Hard Rock fundada en 1985 en Hollywood, presenta su nuevo disco <strong>"Appetite for Devastation"</strong>. Con este álbum, la banda vuelve al sonido propio e inconfundible de sus primeros discos que enamoró a toda una generación.</p>
-        </div>
+        <include src="./views/band-card.html" locals='{ 
+          "image": "./assets/images/band1.png",
+          "title": "Guns N Flowers",
+          "genre": "Hard Rock",
+          "description": "La famosa banda Hard Rock fundada en 1985 en Hollywood, presenta su nuevo disco <Appetite for Devastation>. Con este álbum, la banda vuelve al sonido propio e inconfundible de sus primeros discos que enamoró a toda una generación."
+          }'></include>
+
+        <!-- Elemento -->
+        <include src="./views/band-card.html" locals='{ 
+          "image": "./assets/images/band2.png",
+          "title": "The Rolling Boulders",
+          "genre": "Rock & Roll",
+          "description": "La mundialmente reconocida banda de Rock & Roll británica ha decidido retirarse de los escenarios por problemas de salud y darán su último concierto este año en Rock & You. ¡Es una oportunidad única que no te puedes perder!"
+          }'></include>
+
+        <!-- Elemento -->
+        <include src="./views/band-card.html" locals='{ 
+          "image": "./assets/images/band3.png",
+          "title": "Red Floyd",
+          "genre": "Rock psicodélico",
+          "description": "Considerada un icono cultural del siglo XX y una de las bandas más influyentes, exitosas y aclamadas de la historia de la música, la británica banda no podría faltar a nuestro evento."
+          }'></include>
+
+        <!-- Elemento -->
+        <include src="./views/band-card.html" locals='{ 
+          "image": "./assets/images/band4.png",
+          "title": "The Beach Dudes",
+          "genre": "Surf Rock",
+          "description": "Esta mítica banda estadounidense fue uno de los grupos más influyentes de la década de los 60 gracias a su sonido único e inconfundible que consigue combinando el clásico Rock & Roll con el Jazz."
+          }'></include>
+
+        <!-- Elemento -->
+        <include src="./views/band-card.html" locals='{ 
+          "image": "./assets/images/band5.png",
+          "title": "AB / CD",
+          "genre": "Hard Rock",
+          "description": "Como cada año, también vendrá a nuestro festival la banda de los riffs más pegadizos, ritmos más intensos y vocalidad jactosa llena de líbido, testosterona y júbilo rockero."
+          }'></include>
   
         <!-- Elemento -->
-        <div class="w-full sm:w-1/2 md:w-1/3 box-border py-2.5 px-3.5">
-          <img class="w-full mb-4" src="assets/images/band2.png" alt="The Rolling Boulders">
-          <h3 class="text-center text-h3">The Rolling Boulders</h3>
-          <h4 class="text-center text-h4">Rock & Roll</h4>
-          <p class="text-justify p-4">La mundialmente reconocida banda de Rock & Roll británica ha decidido retirarse de los escenarios por problemas de salud y darán su <strong>último concierto</strong> este año en "Rock & You". ¡Es una oportunidad única que no te puedes perder!</p>
-        </div>
-  
-        <!-- Elemento -->
-        <div class="w-full sm:w-1/2 md:w-1/3 box-border py-2.5 px-3.5">
-          <img class="w-full mb-4" src="assets/images/band3.png" alt="Red Floyd">
-          <h3 class="text-center text-h3">Red Floyd</h3>
-          <h4 class="text-center text-h4">Rock psicodélico</h4>
-          <p class="text-justify p-4">Considerada un icono cultural del siglo XX y una de las bandas más influyentes, exitosas y aclamadas de la historia de la música, la británica banda no podría faltar a nuestro evento.</p>
-        </div>
-  
-        <!-- Elemento -->
-        <div class="w-full sm:w-1/2 md:w-1/3 box-border py-2.5 px-3.5">
-          <img class="w-full mb-4" src="assets/images/band4.png" alt="The Beach Dudes">
-          <h3 class="text-center text-h3">The Beach Dudes</h3>
-          <h4 class="text-center text-h4">Surf Rock</h4>
-          <p class="text-justify p-4">Esta mítica banda estadounidense fue uno de los grupos más influyentes de la década de los 60 gracias a su sonido único e inconfundible que consigue combinando el clásico Rock & Roll con el Jazz.</p>
-        </div>
-  
-        <!-- Elemento -->
-        <div class="w-full sm:w-1/2 md:w-1/3 box-border py-2.5 px-3.5">
-          <img class="w-full mb-4" src="assets/images/band5.png" alt="1212">
-          <h3 class="text-center text-h3">AB / CD</h3>
-          <h4 class="text-center text-h4">Hard Rock</h4>
-          <p class="text-justify p-4">Como cada año, también vendrá a nuestro festival la banda de los riffs más pegadizos, ritmos más intensos y vocalidad jactosa llena de líbido, testosterona y júbilo rockero.</p>
-        </div>
-  
-        <!-- Elemento -->
-        <div class="w-full sm:w-1/2 md:w-1/3 box-border py-2.5 px-3.5">
-          <img class="w-full mb-4" src="assets/images/band6.png" alt="1212">
-          <h3 class="text-center text-h3">King</h3>
-          <h4 class="text-center text-h4">Rock</h4>
-          <p class="text-justify p-4">Tras más de 10 años de inactividad, la famosa banda británica vuelve a los ruedos y han elegido a "Rock & You" para su primer reencuentro. Garantizamos una experiencia única.</p>
-        </div>
-  
+        <include src="./views/band-card.html" locals='{ 
+          "image": "./assets/images/band6.png",
+          "title": "King",
+          "genre": "Rock",
+          "description": "Tras más de 10 años de inactividad, la famosa banda británica vuelve a los ruedos y han elegido a Rock & You para su primer reencuentro. Garantizamos una experiencia única."
+          }'></include> 
       </div>
     </main>
 
